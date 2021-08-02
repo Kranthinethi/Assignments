@@ -1,0 +1,42 @@
+Query/Find Documents
+----------------------
+1.db.movies.find().pretty()
+2.db.movies.find({"writer":"Quentin Tarantino"})
+3.db.movies.find({"actors":"Brad Pitt"})
+4.db.movies.find({"franchise":"The Hobbit"})
+5.db.movies.find({year:{$lt:2000,$gt:1899}})
+6.db.movies.find({$or:[{year:{$lt:2000}},{year:{$gt:2010}}]}).pretty()
+
+
+Update documents.
+-----------------
+1.db.movies.update({title:"The Hobbit Unexpected Journey"},{$set:{synopsis:"<given in assignment>"}})
+2.same as one
+3.db.movies.update( {title:"pulp fiction"}, { $addToSet:{actors:"Samuel L.Jackson"}})
+
+
+
+Text Search
+-----------------
+For this first we need to create the text Index to search through only text index.
+-->db.movies.createIndex({synopsis:"text"})
+1.db.movies.find({$text:{$search:"Bilbo"}})
+2.db.movies.find({$text:{$search:"Gandalf"}})
+3.db.movies.find({$text:{$search:"Bilbo -Gandalf"}})
+4.db.movies.find({$text:{$search:"dwarves hobbit"}})
+5.db.movies.find({$text:{$search:"gold"},{$search:"dragon"}})
+
+
+Delete Documents
+------------------
+db.movies.deleteOne({title:"Pee Wee Herman's Big Adventure"})
+db.movies.deleteOne({title:"Avatar"})
+
+
+[
+   {"username":"GoodGuyGreg",
+   "firstname":"Good Guy",
+   "last_name":"Greg" },
+{"username":"ScumbagSteve",
+   "full_name":["first":"Scumbag","last":"Steve"]} 
+   ]  
