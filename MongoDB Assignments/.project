@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MongoDB Assignments</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Assignment 1.txt</name>
+			<type>1</type>
+			<location>C:/Users/kranthi/Desktop/MongoDB Assignments/Assignment 1.txt</location>
+		</link>
+		<link>
+			<name>Assignment 2.txt</name>
+			<type>1</type>
+			<location>C:/Users/kranthi/Desktop/MongoDB Assignments/Assignment 2.txt</location>
+		</link>
+	</linkedResources>
+</projectDescription>
