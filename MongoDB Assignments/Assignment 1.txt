@@ -31,12 +31,3 @@ Delete Documents
 ------------------
 db.movies.deleteOne({title:"Pee Wee Herman's Big Adventure"})
 db.movies.deleteOne({title:"Avatar"})
-
-
-[
-   {"username":"GoodGuyGreg",
-   "firstname":"Good Guy",
-   "last_name":"Greg" },
-{"username":"ScumbagSteve",
-   "full_name":["first":"Scumbag","last":"Steve"]} 
-   ]  
