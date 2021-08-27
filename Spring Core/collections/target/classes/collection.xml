@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+   <bean id="Question1" class="MavenProjects.collections.Question" >   
+      <property name="questionId" value="1"/>
+      <property name="question" value="What are most populated countries in the world"/>
+      <property name="answers">
+         <list>
+            <value>Russia</value>
+            <value>India</value>
+            <value>China</value>
+            <value>USA</value>
+         </list>
+      </property>
+   </bean>
+     <bean id="Question2" class="MavenProjects.collections.QuestionSet" >   
+      <property name="questionId" value="2"/>
+      <property name="question" value="What are most populated States in India"/>
+      <property name="answers">
+         <list>
+            <value>Rajasthan</value>
+            <value>WestBengal</value>
+            <value>Chandigarh</value>
+            <value>Karnataka</value>
+            <value>Karnataka</value>
+            <value>Karnataka</value>
+         </list>
+      </property>
+   </bean>
+    <bean id="Question3" class="MavenProjects.collections.QuestionMap" >   
+      <property name="questionId" value="3"/>
+      <property name="question" value="What are most populated States in India"/>
+      <property name="answers">
+         <map>
+           <entry key="1" value="Rajasthan"></entry>
+            <entry key="2" value="Chandigarh"></entry>
+             <entry key="3" value="Karnataka"></entry>
+         </map>
+      </property>
+   </bean>
+   
+   <bean id="demo1" class ="MavenProjects.collections.demo" scope="prototype" >
+   <property name="name" value="Kranthi"/> 
+   </bean>
+   <bean id="demo2" class ="MavenProjects.collections.demo" scope="prototype" >
+   <property name="name" value="KranthiKumar"/> 
+   </bean>
+   
+   
+   
+   
+</beans>

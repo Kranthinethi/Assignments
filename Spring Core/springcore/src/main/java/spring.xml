@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+<bean id="Address1" class="MavenProjects.springcore.Address">
+<property name="street" value="Gandhi_road"/>
+<property name="city" value="Hydereabad"/>
+<property name="state" value="TS"/>
+<property name="zip" value="506823"/>
+<property name="country" value="India"/>
+ </bean>
+ <bean id="Customer" class="MavenProjects.springcore.Customer">
+ <!-- Setter injector -->
+  <!--<property name="Customerid"  value="cust01"/>
+   <property name="customerName"  value="ABC_customer"/>
+    <property name="customerContact"  value="548748754"/>
+    <property name="customerAddress" ref="Address1"/>-->
+  
+  <!-- Constructor injector -->
+    <constructor-arg   value="cust01"/>
+    <constructor-arg   value="ABC_customer"/>
+    <constructor-arg   value="548748754"/>
+    <constructor-arg   ref="Address1"/>
+  
+  
+
+
+ </bean>
+</beans>
