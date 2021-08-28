@@ -1,0 +1,12 @@
+
+div{
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+a{
+    color:red;
+    text-decoration: none;
+}
+a:active{
+   color:yellow;
+}

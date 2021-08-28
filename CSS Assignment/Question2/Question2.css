@@ -1,0 +1,10 @@
+div{
+    background-color: rgba(127, 255, 212, 0.63);
+    font-family: sans-serif;
+}
+h2{
+    text-decoration: line-through;
+}
+h3{
+    text-decoration: underline;
+}
